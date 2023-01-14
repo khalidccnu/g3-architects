@@ -279,7 +279,66 @@ nav {
     width: 100%;
 }
 
+/* ===== Fact ===== */
+#fact .title {
+    max-width: 542px;
+    margin-bottom: 50px;
+}
+
+#fact .title h4 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#fact .title p {
+    color: #727272;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.fact {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 75px;
+    text-transform: capitalize;
+}
+
+.fact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+    border: 1px solid #ff900e;
+    border-radius: 8px;
+}
+
+.fact-box strong {
+    color: #424242;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 53px;
+    margin: 10px 0;
+}
+
+.fact-box span {
+    color: #727272;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+
 /* ===== Media Query ===== */
+@media screen and (max-width: 1199px) {
+    /* ===== Fact ===== */
+    .fact {
+        grid-gap: 50px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     /* ===== Header ===== */
     .navbar-toggler {
@@ -362,6 +421,21 @@ nav {
         font-size: 12px;
         line-height: 22px;
     }
+
+    /* ===== Fact ===== */
+    #fact .title h4, .fact-box strong {
+        font-size: 35px;
+        line-height: 43px;
+    }
+
+    #fact .title p, .fact-box span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .fact {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -382,6 +456,11 @@ nav {
         max-width: 480px;
         margin-left: 0;
         margin-bottom: 30px;
+    }
+
+    /* ===== Fact ===== */
+    .fact {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -436,6 +515,25 @@ nav {
     .hl-feature .toast span {
         font-size: 12px;
         line-height: 23px;
+    }
+
+    /* ===== Fact ===== */
+    #fact .title {
+        max-width: 100%;
+    }
+
+    #fact .title h4, .fact-box strong {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    #fact .title p, .fact-box span {
+        font-size: 12px;
+        line-height: 23px;
+    }
+
+    .fact {
+        grid-template-columns: 1fr;
     }
 }
 
