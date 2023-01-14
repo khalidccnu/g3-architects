@@ -195,7 +195,33 @@ nav {
 .hl-feature {
     display: flex;
     align-items: center;
+    position: relative;
     margin-top: 90px;
+}
+
+.hl-feature .toast {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-22%, -25%);
+    color: #fff;
+    text-align: center;
+    background-color: #ff900e;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.hl-feature .toast h4 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    margin: 0;
+}
+
+.hl-feature .toast span {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 40px;
 }
 
 .hl-feature-content {
@@ -299,6 +325,20 @@ nav {
         margin-top: 0;
     }
 
+    .hl-feature .toast {
+        transform: translate(12%, -65%);
+    }
+
+    .hl-feature .toast h4 {
+        font-size: 35px;
+        line-height: 43px;
+    }
+
+    .hl-feature .toast span {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
     .hl-feature-content {
         width: 100%;
     }
@@ -328,6 +368,10 @@ nav {
     /* ===== Feature ===== */
     .hl-feature {
         flex-direction: column;
+    }
+
+    .hl-feature .toast {
+        transform: translate(12%, -825%);
     }
 
     .hl-feature-content {
@@ -380,8 +424,29 @@ nav {
         display: block;
     }
 
-    .more-feature-content h4, .hl-feature-content h4 {
+    .more-feature-content h4, .hl-feature .toast h4, .hl-feature-content h4 {
         font-size: 28px;
         line-height: 36px;
+    }
+
+    .hl-feature .toast {
+        transform: translate(-100%, -825%);
+    }
+
+    .hl-feature .toast span {
+        font-size: 12px;
+        line-height: 23px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    /* ===== Feature ===== */
+    .hl-feature .toast {
+        transform: translate(-120%, -1375%);
+    }
+
+    .hl-feature .toast h4 {
+        font-size: 18px;
+        line-height: 22px;
     }
 }
