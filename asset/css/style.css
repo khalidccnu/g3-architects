@@ -314,6 +314,12 @@ nav {
     padding: 35px;
     border: 1px solid #ff900e;
     border-radius: 8px;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.fact-box:hover {
+    transform: translateY(-10px);
 }
 
 .fact-box strong {
