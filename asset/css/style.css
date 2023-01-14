@@ -363,6 +363,24 @@ nav {
     filter: grayscale(100%);
 }
 
+/* ===== Footer ===== */
+footer {
+    margin-top: auto;
+    padding-bottom: 75px;
+    text-align: center;
+}
+
+footer span {
+    display: block;
+    color: #424242;
+    font-size: 20px;
+    line-height: 23px;
+    background-color: #fff4e7;
+    margin-top: 75px;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
 /* ===== Media Query ===== */
 @media screen and (max-width: 1199px) {
     /* ===== Fact ===== */
@@ -484,6 +502,12 @@ nav {
         font-size: 14px;
         line-height: 24px;
     }
+
+    /* ===== Footer ===== */
+    footer span {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -601,6 +625,12 @@ nav {
 
     .sponsor {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ===== Footer ===== */
+    footer span {
+        font-size: 12px;
+        line-height: 23px;
     }
 }
 
