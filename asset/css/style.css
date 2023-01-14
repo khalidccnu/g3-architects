@@ -363,6 +363,93 @@ nav {
     filter: grayscale(100%);
 }
 
+/* ===== Testimonial ===== */
+#testimonial {
+    text-align: center;
+}
+
+#testimonial .title {
+    margin-bottom: 75px;
+}
+
+#testimonial .title h4 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    text-transform: capitalize;
+    text-decoration: underline wavy #ff900e;
+    margin: 0;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 75px;
+}
+
+.testimonial img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.testimonial h5 {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    margin: 0;
+}
+
+.testimonial h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 0;
+}
+
+.testimonial p {
+    color: #727272;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.testimonial ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonial li:not(:first-child) {
+    margin-left: 15px;
+}
+
+.testimonial a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #bdd1df;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.testimonial a:hover {
+    background-color: #ff900e;
+}
+
+.testimonial .lni {
+    transform: rotate(0);
+    transition: transform 0.3s;
+}
+
+.testimonial a:hover .lni {
+    transform: rotate(-360deg);
+}
+
 /* ===== Footer ===== */
 footer {
     margin-top: auto;
@@ -503,6 +590,22 @@ footer span {
         line-height: 24px;
     }
 
+    /* ===== Testimonial ===== */
+    #testimonial .title h4 {
+        font-size: 35px;
+        line-height: 43px;
+    }
+
+    .testimonial h5 {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .testimonial h6 {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
     /* ===== Footer ===== */
     footer span {
         font-size: 14px;
@@ -625,6 +728,22 @@ footer span {
 
     .sponsor {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ===== Testimonial ===== */
+    #testimonial .title h4 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .testimonial h5 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .testimonial h6 {
+        font-size: 14px;
+        line-height: 16px;
     }
 
     /* ===== Footer ===== */
