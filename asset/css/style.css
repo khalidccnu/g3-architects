@@ -64,7 +64,7 @@ nav {
     text-decoration: none;
 }
 
-.navbar-toggler {
+/*.navbar-toggler {
     display: none;
     cursor: pointer;
     transition: color 0.3s;
@@ -72,7 +72,7 @@ nav {
 
 .navbar-toggler:hover {
     color: #ff900e;
-}
+}*/
 
 .navbar-nav {
     display: flex;
@@ -453,7 +453,7 @@ nav {
 }
 
 .testimonial a:hover .lni {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
 }
 
 /* ===== Footer ===== */
@@ -489,12 +489,26 @@ footer span {
 
 @media screen and (max-width: 991px) {
     /* ===== Header ===== */
-    .navbar-toggler {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*.navbar-toggler {
         display: inline-block;
     }
 
     .navbar-collapse {
         display: none;
+    }*/
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-left: 0 !important;
+        margin-top: 10px;
     }
 
     /* ===== Feature ===== */
@@ -626,17 +640,13 @@ footer span {
     }
 
     .hl-feature .toast {
-        transform: translate(12%, -825%);
-    }
-
-    .hl-feature-content {
-        order: 1;
+        transform: translate(12%, -125%);
     }
 
     .hl-feature-img {
         max-width: 480px;
         margin-left: 0;
-        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
     /* ===== Fact ===== */
@@ -680,6 +690,11 @@ footer span {
     }
 
     /* ===== Feature ===== */
+    .more-feature-img {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
     .more-feature-content {
         display: block;
     }
@@ -687,10 +702,6 @@ footer span {
     .more-feature-content h4, .hl-feature .toast h4, .hl-feature-content h4 {
         font-size: 28px;
         line-height: 36px;
-    }
-
-    .hl-feature .toast {
-        transform: translate(-100%, -825%);
     }
 
     .hl-feature .toast span {
@@ -762,7 +773,7 @@ footer span {
 @media screen and (max-width: 460px) {
     /* ===== Feature ===== */
     .hl-feature .toast {
-        transform: translate(-120%, -1375%);
+        transform: translate(-95%, -115%);
     }
 
     .hl-feature .toast h4 {
